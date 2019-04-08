@@ -1,6 +1,3 @@
-#include <iostream>
-
-#include <string>
 #include "List.h"
 
 List::List(struct loc newDest){

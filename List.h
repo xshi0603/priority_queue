@@ -1,7 +1,7 @@
-#include <iostream>
 #include <string>
 #include <cmath>
 #include "Node.h"
+#pragma once
 
 using std::cout;
 using std::endl;
