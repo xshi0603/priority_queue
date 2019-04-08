@@ -1,6 +1,6 @@
 #include <string>
 #include <cmath>
-#include "Node.h"
+#include "Node.cpp"
 #pragma once
 
 using std::cout;
