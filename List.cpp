@@ -104,6 +104,18 @@ std::string List::insert(int index,std::string data){ // inserts string at locat
 
 }
 */
+
+void List::remove() { // removes the element at front
+
+  Node *t = head;
+  Node *t2 = head->getNext();
+
+  t->setNext(t->getNext()->getNext());
+
+  delete(t2);
+
+}
+
 void List::remove(int input) { // removes the element at location i
 
   Node *t = head;
@@ -127,3 +139,10 @@ struct loc &List::operator[](int input) { // overloaded square brackets
   return at(input);
 }
 
+struct loc List::front() {  
+  return at(0);
+}
+
+bool List::empty() {
+  return (currSize == 0);
+}
